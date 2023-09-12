@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dice</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="result">
+        <h1 id="result_board">
+          <span id="user_score"></span> :
+          <span id="bot_score"></span>
+        </h1>
+      </div>
+      <h1 id="game_end_result" class=""></h1>
+      <div id="result_box">
+        <div class="box">
+          <div id="user_result">
+            <img src="./imgs/user.png" id="user_img" />
+            <h3 class="header">YOU</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div id="bot_result">
+            <img src="./imgs/bot.png" id="bot_img" />
+            <h3 class="header">BOT</h3>
+          </div>
+        </div>
+      </div>
+      <button id="roll">Roll</button>
+      <button id="restart">Restart</button>
+    </div>
+    <div class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h4>Played Matches</h4>
+        <ul class="matches-list"></ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
